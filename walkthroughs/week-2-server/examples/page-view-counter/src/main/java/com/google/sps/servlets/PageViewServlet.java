@@ -24,10 +24,14 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/page-views")
 public class PageViewServlet extends HttpServlet {
 
-  private int pageViews = 0;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private int pageViews = 0;
 
   @Override
-  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+  public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
     pageViews++;
 
     response.setContentType("text/html;");
