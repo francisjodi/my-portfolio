@@ -272,6 +272,10 @@ box-shadow: lightskyblue;
     color: blue;
     background: none;
 }
+.about .chart-container{
+    align-items: left;
+}
+
 
 /* portfolio section styling */
 .services, .teams{
@@ -393,7 +397,6 @@ box-shadow: lightskyblue;
 .skills-content .right .python::before{
     width: 60%;
 }
-
 /* teams section styling */
 
 /* .teams .title::after{
@@ -713,3 +716,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+

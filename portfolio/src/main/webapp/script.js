@@ -121,3 +121,30 @@ $(document).ready(function(){
     });
 });
 
+// charts 
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+/** Creates a chart and adds it to the page. */
+function drawChart() {
+  const data = new google.visualization.DataTable();
+  data.addColumn('string', 'interests');
+  data.addColumn('number', 'count');
+        data.addRows([
+          ['Music', 20],
+          ['Movies', 20],
+          ['Sleep', 30],
+          ['Code', 40],
+          ['FOOD', 50]
+        ]);
+
+  const options = {
+    'title': 'Interests',
+    'width':500,
+    'height':400
+  };
+
+  const chart = new google.visualization.PieChart(
+      document.getElementById('chart-container'));
+  chart.draw(data, options);
+}

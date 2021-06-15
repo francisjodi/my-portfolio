@@ -3,6 +3,13 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+
+    <dependency>
+  <groupId>com.google.cloud</groupId>
+  <artifactId>google-cloud-datastore</artifactId>
+  <version>1.104.0</version>
+</dependency>
+
   <groupId>com.google.sps</groupId>
   <artifactId>portfolio</artifactId>
   <version>1</version>
@@ -19,11 +26,18 @@
     <googleCloudProjectId>jfrancis-sps-summer21</googleCloudProjectId>
   </properties>
 
+  
+  <dependency>
+  <groupId>com.google.cloud</groupId>
+  <artifactId>google-cloud-datastore</artifactId>
+  <version>1.104.0</version>
+</dependency>
+<!-- 
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>
     <version>2.8.6</version>
-</dependency>
+</dependency> -->
 
   <dependencies>
     <!-- Java Servlets API -->
