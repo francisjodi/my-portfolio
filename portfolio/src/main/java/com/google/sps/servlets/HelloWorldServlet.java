@@ -1,4 +1,3 @@
-
 package com.google.sps.servlets;
 import com.google.gson.Gson;
 import java.io.IOException;
@@ -11,20 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-
-    @Override
-//   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-//     response.setContentType("text/html;");
-//     response.getWriter().println("<h1>Hello there, I am Jodi!</h1>");
-//   }
-  
- public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+  @Override
+   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     //Manually Create ArrayList String
-    String ArrayList[] = new String[] {"Hello There","see ya"};
+    String ArrayList[] = new String[] {"Thanks","you", "bye"};
 
     //Convert ArrayList to JSON
     String newJson = convertToJsonUsingGson(ArrayList);
