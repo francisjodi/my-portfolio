@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="script.js"></script>
 
 </head>
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
+    
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">JDF</a></div>
@@ -47,10 +45,6 @@
                 <a href="https://www.linkedin.com/in/jodi-ann-francis-241a41185/"> 
                     <i class="fab fa-linkedin"></i>
                 </a>
-            <!-- <div class="social-icon"> 
-                <a href="https://github.com/francisjodi"> 
-                    <i class="fab fa-github"></i>
-                </a> -->
             </div>
           </div>
       </div>
@@ -60,16 +54,17 @@
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
+               
+        <div id="chart-container">
+        </div>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/img0.jpg" alt="picture of me">
                 </div>
                 <div class="column right">
-                    <!-- <div class="text">I'm Jamaican and I'm a <span class="typing-2"></span></div> -->
                     <p> I am a Junior at Loyola Marymount Univeristy, majoring in Computer Science.
                          I have a special interest in Cyber Security, Web development and Product Management.
                     </p>
-                    <a href="https://drive.google.com/file/d/1gqIA7bZyDidxhvmTJ6_UDL1PzlhCf_H5/view?usp=sharing"> Technical Resume</a>
                 </div>
             </div>
         </div>
@@ -100,13 +95,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text"></div>
-                        <p></p>
-                    </div>
-                </div> -->
+               
                </div>
             </div>
         </div>
@@ -119,8 +108,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & courses</div>
-                     <!-- <p> eufbeibibrbfjdnjkc bddkjsuixasjkx </p> -->
-                    <a href="#">Read more</a> 
+                    <!-- <a href="#">Read more</a>  -->
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -163,49 +151,6 @@
         </div>
     </section>
 
-    <!-- teams section start
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">Gallery</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- contact section start -->
     <section class="contact" id="contact">
@@ -259,6 +204,11 @@
                             <div class="error-box"></div>
                         </div>
                     </form>
+                    <form method="POST" action="/new-task">
+      <input type="text" name="title" />
+      <br/>
+      <button>Submit</button>
+    </form>
                 </div>
             </div>
         </div>
@@ -267,9 +217,21 @@
     <!-- footer section start -->
     <footer>
         By: Jodi-Ann Francis 
-        <!-- <span>Created By <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span> -->
     </footer>
 
-    <script src="script.js"></script>
+   <!-- server
+     <h1>Server </h1>
+
+    <p>Click this button to see the server's current date.</p>
+    <button onclick="showServerTime();">
+      Get date
+    </button>
+    <p id="date-container"></p>
+    <p>Click <a href="/date">here</a> to see the server response directly.</p>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div> -->
 </body>
 </html>
+
+
