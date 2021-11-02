@@ -18,7 +18,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>jfrancis1-sps-summer21</googleCloudProjectId>
+    <googleCloudProjectId>my-portfolio-330920</googleCloudProjectId>
   </properties>
 
 
