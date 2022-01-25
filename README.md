@@ -1,4 +1,6 @@
-# Google Software Product Sprint
+# Personal Portfolio
 
-Jodi-Ann Francis 
-Sps Participant
+Learn more about me. 
+in porgress...
+http://jfrancis-sps-summer21.appspot.com/
+
